@@ -14,6 +14,8 @@ export const dynamic = "force-dynamic";
 
 const STORAGE_BUCKET = "encrypted-files";
 const HISTORY_RETENTION_DAYS = 14;
+const LIMIT_ANONYMOUS = 10 * 1024 * 1024; // 10MB
+const LIMIT_USER = 50 * 1024 * 1024; // 50MB
 
 /**
  * Upload a file
@@ -66,6 +68,15 @@ export async function POST(request: NextRequest) {
         }
 
         const metadata = validation.data;
+
+        // Validate file size limits
+        const limit = userId ? LIMIT_USER : LIMIT_ANONYMOUS;
+        if (file.size > limit) {
+            return NextResponse.json(
+                { error: `File too large. Max ${userId ? "50MB" : "10MB"}.` },
+                { status: 400 }
+            );
+        }
 
         // Content moderation
         if (metadata.originalFilename && containsExplicitContent(metadata.originalFilename)) {

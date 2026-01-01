@@ -30,8 +30,8 @@ import { useTranslation } from "react-i18next";
 
 const TURNSTILE_SITE_KEY = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || "1x00000000000000000000AA";
 
-const LIMIT_ANONYMOUS = 50 * 1024 * 1024;
-const LIMIT_USER = 200 * 1024 * 1024;
+const LIMIT_ANONYMOUS = 10 * 1024 * 1024; // 10MB for free/anonymous users
+const LIMIT_USER = 50 * 1024 * 1024; // 50MB for signed-in users
 
 function formatFileSize(bytes: number): string {
     if (bytes === 0) return "0 Bytes";

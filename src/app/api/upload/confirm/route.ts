@@ -11,6 +11,8 @@ export const dynamic = "force-dynamic";
 
 const STORAGE_BUCKET = "encrypted-files";
 const HISTORY_RETENTION_DAYS = 14;
+const LIMIT_ANONYMOUS = 10 * 1024 * 1024; // 10MB
+const LIMIT_USER = 50 * 1024 * 1024; // 50MB
 
 /**
  * Confirm upload request schema
@@ -64,6 +66,17 @@ export async function POST(request: NextRequest) {
             return NextResponse.json(
                 { error: "File not found in storage. Upload may have failed." },
                 { status: 404 }
+            );
+        }
+
+        // Validate file size limits (defense-in-depth - presign also checks this)
+        const limit = userId ? LIMIT_USER : LIMIT_ANONYMOUS;
+        if (metadata.size > limit) {
+            // Remove the uploaded file since it exceeds limits
+            await supabaseAdmin.storage.from(STORAGE_BUCKET).remove([storagePath]);
+            return NextResponse.json(
+                { error: `File too large. Max ${userId ? "50MB" : "10MB"}.` },
+                { status: 400 }
             );
         }
 
