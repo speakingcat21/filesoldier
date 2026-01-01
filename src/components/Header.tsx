@@ -42,7 +42,7 @@ export function Header() {
 
                 <div className="flex items-center gap-2 sm:gap-4 md:gap-6">
                     <a
-                        href="https://github.com/speakingcat21/file-soldier"
+                        href="https://github.com/speakingcat21/filesoldier"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="p-2 min-w-[44px] min-h-[44px] flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-muted/50 rounded-lg transition-colors"
