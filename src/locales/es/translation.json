@@ -1,0 +1,137 @@
+{
+    "header": {
+        "home": "Inicio",
+        "myFiles": "Mis Archivos",
+        "faq": "Preguntas Frecuentes",
+        "login": "Iniciar Sesión",
+        "logout": "Cerrar Sesión"
+    },
+    "home": {
+        "title": "Compartir Archivos de Forma Segura es Simple",
+        "subtitle": "Comparte archivos de forma segura con cifrado de extremo a extremo. No se requiere registro para uso básico.",
+        "dropzone": "Arrastra y suelta archivos aquí, o haz clic para seleccionar",
+        "encrypting": "Cifrando...",
+        "uploading": "Subiendo...",
+        "success": "¡Archivo Subido Exitosamente!",
+        "copyLink": "Copiar Enlace",
+        "downloadLimit": "Máx {{limit}} descargas",
+        "expiresIn": "Expira en {{time}}",
+        "passwordProtected": "Protegido con Contraseña",
+        "sendAnother": "Enviar Otro Archivo"
+    },
+    "download": {
+        "title": "Listo para Descargar",
+        "enterPassword": "Ingresa la contraseña para desbloquear",
+        "unlock": "Desbloquear",
+        "downloading": "Descargando...",
+        "decrypting": "Descifrando...",
+        "download": "Descargar Archivo",
+        "unlockAndDownload": "Desbloquear y Descargar",
+        "fileInfo": "Tamaño del archivo: {{size}}",
+        "expired": "Este enlace ha expirado",
+        "notFound": "Archivo no encontrado"
+    },
+    "faq": {
+        "title": "Preguntas Frecuentes",
+        "description": "Encuentra respuestas a preguntas comunes sobre FileSoldier.",
+        "howItWorks": "Cómo Funciona",
+        "items": [
+            {
+                "question": "¿Es FileSoldier gratuito?",
+                "answer": "¡Sí! FileSoldier es completamente gratuito para uso básico. Puedes subir archivos de hasta 10MB sin cuenta. Regístrate para desbloquear hasta 50MB."
+            },
+            {
+                "question": "¿Cuánto tiempo se guardan mis archivos?",
+                "answer": "Los archivos se guardan según el tiempo de expiración que elijas. Después de expirar, se eliminan permanentemente."
+            },
+            {
+                "question": "¿Son seguros mis datos?",
+                "answer": "Absolutamente. Todos los archivos se cifran con AES-256 en tu navegador antes de subirse. Nunca vemos tus datos sin cifrar."
+            },
+            {
+                "question": "¿Puedo proteger mis archivos con contraseña?",
+                "answer": "Sí, ¡y lo recomendamos! Puedes establecer una contraseña al subir. El destinatario la necesitará para descargar."
+            },
+            {
+                "question": "¿Qué es el límite de descargas?",
+                "answer": "Puedes establecer un número máximo de descargas. Una vez alcanzado, el archivo ya no se podrá descargar."
+            },
+            {
+                "question": "¿Qué tipos de archivo puedo subir?",
+                "answer": "Cualquier tipo de archivo. FileSoldier no restringe tipos, pero asegúrate de tener derechos para compartirlos."
+            },
+            {
+                "question": "¿Qué pasa si olvido la contraseña?",
+                "answer": "Debido a nuestro cifrado de conocimiento cero, no podemos recuperar tu contraseña. Si la olvidas, el archivo es irrecuperable."
+            }
+        ]
+    },
+    "howItWorks": {
+        "title": "Cómo Funciona FileSoldier",
+        "subtitle": "Compartir archivos de forma segura en 4 pasos",
+        "step1": {
+            "title": "Sube Tu Archivo",
+            "description": "Selecciona cualquier archivo y opcionalmente establece una contraseña, tiempo de expiración y límite de descargas."
+        },
+        "step2": {
+            "title": "El Navegador Cifra",
+            "description": "Tu archivo se cifra con AES-256 directamente en tu navegador. La protección con contraseña opcional añade una capa extra de seguridad."
+        },
+        "step3": {
+            "title": "Almacenamiento Seguro",
+            "description": "Solo los datos cifrados llegan a nuestro servidor. Nunca vemos tu archivo real."
+        },
+        "step4": {
+            "title": "Descarga Segura",
+            "description": "El destinatario abre el enlace, ingresa la contraseña si es necesario, y el archivo se descifra en su navegador."
+        },
+        "zeroKnowledge": {
+            "title": "Arquitectura de Conocimiento Cero",
+            "description": "Nunca tenemos acceso a tus archivos sin cifrar ni contraseñas. Tus datos permanecen privados, de extremo a extremo."
+        }
+    },
+    "myFiles": {
+        "title": "Historial de Archivos",
+        "zeroKnowledge": {
+            "title": "Modo Conocimiento Cero",
+            "description": "Tus archivos están cifrados con claves almacenadas solo en los enlaces. Para descargar, usa el enlace original que recibiste después de subir."
+        },
+        "noFiles": "Sin archivos aún",
+        "noFilesDescription": "Los archivos que subas aparecerán aquí.",
+        "activeFiles": "Archivos Activos",
+        "expiredFiles": "Archivos Expirados",
+        "noActiveFiles": "Sin archivos activos",
+        "noExpiredFiles": "Sin archivos expirados",
+        "uploaded": "Subido",
+        "expires": "Expira",
+        "expired": "Expirado",
+        "downloads": "descargas",
+        "noExpiry": "Sin Expiración",
+        "passwordProtected": "Protegido con Contraseña",
+        "oneTime": "Una vez",
+        "viewLink": "Ver Enlace",
+        "useOriginalLink": "Usar enlace original",
+        "shareLink": "Compartir Enlace",
+        "filenameVisible": "Nombre visible",
+        "deleteFile": "Eliminar Archivo",
+        "deleteConfirm": "¿Estás seguro de que quieres eliminar",
+        "deleteWarning": "Esta acción no se puede deshacer y cualquiera con el enlace ya no podrá descargarlo.",
+        "cancel": "Cancelar",
+        "delete": "Eliminar",
+        "sortNewest": "Más Recientes",
+        "sortOldest": "Más Antiguos",
+        "sortName": "Nombre (A-Z)",
+        "sortSize": "Tamaño (Mayor)",
+        "sortDownloads": "Más Descargas",
+        "uploadHistory": "Historial de Subidas",
+        "historyFilename": "Nombre",
+        "historySize": "Tamaño",
+        "historyDownloads": "Descargas",
+        "historyUploaded": "Subido",
+        "historyStatus": "Estado",
+        "historyNote": "El historial se elimina automáticamente después de 14 días.",
+        "statusActive": "Activo",
+        "statusExpired": "Expirado",
+        "statusDeleted": "Eliminado"
+    }
+}

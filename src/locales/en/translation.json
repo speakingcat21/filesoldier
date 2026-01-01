@@ -1,0 +1,137 @@
+{
+    "header": {
+        "home": "Home",
+        "myFiles": "My Files",
+        "faq": "FAQ",
+        "login": "Login",
+        "logout": "Logout"
+    },
+    "home": {
+        "title": "Secure File Sharing Made Simple",
+        "subtitle": "Share files securely with end-to-end encryption. No signup required for basic use.",
+        "dropzone": "Drag & drop files here, or click to select",
+        "encrypting": "Encrypting...",
+        "uploading": "Uploading...",
+        "success": "File Uploaded Successfully!",
+        "copyLink": "Copy Link",
+        "downloadLimit": "Max {{limit}} downloads",
+        "expiresIn": "Expires in {{time}}",
+        "passwordProtected": "Password Protected",
+        "sendAnother": "Send Another File"
+    },
+    "download": {
+        "title": "Ready to Download",
+        "enterPassword": "Enter password to unlock",
+        "unlock": "Unlock",
+        "downloading": "Downloading...",
+        "decrypting": "Decrypting...",
+        "download": "Download File",
+        "unlockAndDownload": "Unlock & Download",
+        "fileInfo": "File size: {{size}}",
+        "expired": "This link has expired",
+        "notFound": "File not found"
+    },
+    "faq": {
+        "title": "Frequently Asked Questions",
+        "description": "Find answers to common questions about FileSoldier.",
+        "howItWorks": "How it Works",
+        "items": [
+            {
+                "question": "Is FileSoldier free to use?",
+                "answer": "Yes! FileSoldier is completely free for basic use. You can upload files up to 10MB without an account. Sign up for a free account to unlock up to 50MB file sizes and manage your uploads."
+            },
+            {
+                "question": "How long are my files stored?",
+                "answer": "Files are stored based on the expiration time you choose during upload. You can set expiration from 1 hour up to 7 days. After expiration, files are automatically and permanently deleted from our servers."
+            },
+            {
+                "question": "Is my data secure?",
+                "answer": "Absolutely. All files are encrypted using AES-256 encryption directly in your browser before being uploaded. This means your files are encrypted before they ever leave your device, and only someone with the correct password can decrypt them. We never see your unencrypted data."
+            },
+            {
+                "question": "Can I password protect my files?",
+                "answer": "Yes, and we highly recommend it! You can set a password during upload. The recipient will need to enter this password to download and decrypt the file. For maximum security, share the password through a different channel than the download link."
+            },
+            {
+                "question": "What is a download limit?",
+                "answer": "You can set a maximum number of downloads for each file. Once the limit is reached, the file can no longer be downloaded. This is useful for ensuring your file is only accessed a specific number of times."
+            },
+            {
+                "question": "What file types can I upload?",
+                "answer": "You can upload any file type. FileSoldier doesn't restrict file types, but please ensure you have the rights to share any content you upload and that it complies with our terms of service."
+            },
+            {
+                "question": "What happens if I forget the password?",
+                "answer": "Due to our zero-knowledge encryption, we cannot recover your password or decrypt your files. If you forget the password, the file is unrecoverable. Please store your passwords safely."
+            }
+        ]
+    },
+    "howItWorks": {
+        "title": "How FileSoldier Works",
+        "subtitle": "Simple, secure file sharing in 4 steps",
+        "step1": {
+            "title": "Upload Your File",
+            "description": "Select any file and optionally set a password, expiry time, and download limit."
+        },
+        "step2": {
+            "title": "Browser Encrypts",
+            "description": "Your file is encrypted with AES-256 directly in your browser. Optional password protection adds an extra layer of security."
+        },
+        "step3": {
+            "title": "Secure Storage",
+            "description": "Only encrypted data reaches our server. We never see your actual file."
+        },
+        "step4": {
+            "title": "Secure Download",
+            "description": "Recipient opens the link, enters password if required, and file decrypts in their browser."
+        },
+        "zeroKnowledge": {
+            "title": "Zero-Knowledge Architecture",
+            "description": "We never have access to your unencrypted files or passwords. Your data remains private, end-to-end."
+        }
+    },
+    "myFiles": {
+        "title": "File History",
+        "zeroKnowledge": {
+            "title": "Zero-Knowledge Mode",
+            "description": "Your files are encrypted with keys stored only in share links. To download a file, use the original share link you received after upload."
+        },
+        "noFiles": "No files yet",
+        "noFilesDescription": "Files you upload will appear here.",
+        "activeFiles": "Active Files",
+        "expiredFiles": "Expired Files",
+        "noActiveFiles": "No active files",
+        "noExpiredFiles": "No expired files",
+        "uploaded": "Uploaded",
+        "expires": "Expires",
+        "expired": "Expired",
+        "downloads": "downloads",
+        "noExpiry": "No Expiry",
+        "passwordProtected": "Password Protected",
+        "oneTime": "One-time",
+        "viewLink": "View Link",
+        "useOriginalLink": "Use original link",
+        "shareLink": "Share Link",
+        "filenameVisible": "Filename visible",
+        "deleteFile": "Delete File",
+        "deleteConfirm": "Are you sure you want to delete",
+        "deleteWarning": "This action cannot be undone and anyone with the link will no longer be able to download it.",
+        "cancel": "Cancel",
+        "delete": "Delete",
+        "sortNewest": "Newest First",
+        "sortOldest": "Oldest First",
+        "sortName": "Name (A-Z)",
+        "sortSize": "Size (Largest)",
+        "sortDownloads": "Most Downloads",
+        "uploadHistory": "Upload History",
+        "historyFilename": "Filename",
+        "historySize": "Size",
+        "historyDownloads": "Downloads",
+        "historyUploaded": "Uploaded",
+        "historyStatus": "Status",
+        "historyNote": "History is automatically cleared after 14 days.",
+        "statusActive": "Active",
+        "statusExpired": "Expired",
+        "statusDeleted": "Deleted"
+    }
+}

@@ -1,0 +1,22 @@
+# FileSoldier Robots.txt
+# https://www.robotstxt.org/robotstxt.html
+
+User-agent: *
+Allow: /
+
+# Allow Bing to crawl efficiently
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Allow MSN Bot
+User-agent: msnbot
+Allow: /
+
+# Protect private routes from indexing
+Disallow: /d/
+Disallow: /my-files
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://www.filesoldier.online/sitemap.xml

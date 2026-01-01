@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary Meta Tags -->
+  <title>FileSoldier - Secure Encrypted File Sharing</title>
+  <meta name="title" content="FileSoldier - Secure Encrypted File Sharing" />
+  <meta name="description"
+    content="Share files securely with end-to-end AES-256 encryption. Zero-knowledge architecture means only you and your recipient can access your files. No account required." />
+  <meta name="keywords"
+    content="secure file sharing, encrypted file transfer, end-to-end encryption, zero-knowledge, private file sharing, AES-256, anonymous file upload" />
+  <meta name="author" content="FileSoldier" />
+  <meta name="theme-color" content="#18181b" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.filesoldier.online/" />
+  <meta property="og:title" content="FileSoldier - Secure Encrypted File Sharing" />
+  <meta property="og:description"
+    content="Share files securely with end-to-end AES-256 encryption. Zero-knowledge architecture means only you and your recipient can access your files." />
+  <meta property="og:image" content="/og-image.png" />
+  <meta property="og:site_name" content="FileSoldier" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.filesoldier.online/" />
+  <meta name="twitter:title" content="FileSoldier - Secure Encrypted File Sharing" />
+  <meta name="twitter:description"
+    content="Share files securely with end-to-end AES-256 encryption. Zero-knowledge architecture means only you and your recipient can access your files." />
+  <meta name="twitter:image" content="/og-image.png" />
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "FileSoldier",
+    "applicationCategory": "UtilitiesApplication",
+    "description": "Secure encrypted file sharing with end-to-end AES-256 encryption and zero-knowledge architecture.",
+    "url": "https://www.filesoldier.online",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "featureList": [
+      "End-to-end AES-256 encryption",
+      "Zero-knowledge architecture",
+      "Anonymous file uploads",
+      "Password protection",
+      "Burn after reading",
+      "Custom expiry times",
+      "QR code sharing"
+    ]
+  }
+  </script>
+
+  <!-- Cloudflare Turnstile for bot protection -->
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" defer></script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>

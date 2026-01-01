@@ -1,0 +1,29 @@
+{
+    "name": "FileSoldier - Anonymous Encrypted File Sharing",
+    "short_name": "FileSoldier",
+    "description": "Share files anonymously with end-to-end AES-256 encryption. Zero-knowledge, no account required, self-destructing links.",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "theme_color": "#18181b",
+    "background_color": "#18181b",
+    "display": "standalone",
+    "start_url": "/",
+    "scope": "/",
+    "orientation": "any",
+    "categories": [
+        "utilities",
+        "security",
+        "productivity"
+    ]
+}
