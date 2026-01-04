@@ -30,17 +30,32 @@ export function Header() {
             <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-3 sm:px-6 py-3 sm:py-4 bg-background/50 backdrop-blur-md border-b border-border">
                 <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity min-h-[44px]">
                     <Image
-                        src="/favicon-32x32.png"
+                        src="/android-chrome-192x192.png"
                         alt="FileSoldier Logo"
                         width={32}
-                        height={32}
-                        className="w-8 h-8"
+                        height={28}
+                        className="h-7 w-8 object-contain"
                         priority
                     />
                     <span className="font-bold text-foreground tracking-tight hidden xs:inline sm:inline">FileSoldier</span>
                 </Link>
 
                 <div className="flex items-center gap-2 sm:gap-4 md:gap-6">
+                    <a
+                        href="https://www.producthunt.com/products/filesoldier?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-filesoldier"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hidden sm:flex items-center"
+                        aria-label="View FileSoldier on Product Hunt"
+                    >
+                        <img
+                            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1057807&theme=dark&t=1767537869484"
+                            alt="FileSoldier - Secure, anonymous, zero-knowledge file sharing. | Product Hunt"
+                            width="250"
+                            height="54"
+                            className="h-[40px] w-auto"
+                        />
+                    </a>
                     <a
                         href="https://github.com/speakingcat21/filesoldier"
                         target="_blank"
