@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 import "@/styles/globals.css";
 import { Providers } from "@/components/providers";
 import { Header } from "@/components/Header";
@@ -213,6 +214,8 @@ export default function RootLayout({
                     src="https://challenges.cloudflare.com/turnstile/v0/api.js"
                     strategy="afterInteractive"
                 />
+                {/* Vercel Analytics */}
+                <Analytics />
             </body>
         </html>
     );
